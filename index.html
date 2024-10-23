@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Roadside Dogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ffcc00, #ff8800);
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .images {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .images img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        .donation-section {
+            background-color: #ffeb99;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .donation-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .donation-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+        }
+
+        button {
+            background-color: #ff8800;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #e67300;
+            transform: translateY(-3px);
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: all 0.75s ease;
+            opacity: 0;
+        }
+
+        button:hover::before {
+            opacity: 1;
+            width: 110%;
+            height: 110%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Help Feed Roadside Dogs</h1>
+        <p>Your support helps provide food and care for stray dogs in need.</p>
+    </header>
+
+    <section class="images">
+        <img src="straydog1.jpg" alt="Feeding roadside dog 1">
+        <img src="States_Kerala_stray_dogs.jpg" alt="Feeding roadside dog 2">
+        <img src="feedmobile.jpg" alt="Roadside dog looking for food">
+    </section>
+
+    <section class="donation-section">
+        <!-- Button placed above the text -->
+        <button id="donateBtn">Donate Now</button>
+        <h2>Join Us in Making a Difference</h2>
+        <p>Click the button above to donate and help feed the stray dogs in our community. Every contribution counts!</p>
+    </section>
+
+    <footer>
+        <p>Thank you for your kindness and support! Together, we can make a big impact.</p>
+    </footer>
+
+    <script>
+        document.getElementById('donateBtn').addEventListener('click', function() {
+            window.location.href = 'https://razorpay.me/@quicktips';
+        });
+    </script>
+</body>
+</html>
