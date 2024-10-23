@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawFeeders | Feed Roadside Dogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff8800;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Donate Button */
+        .donate-btn {
+            background-color: #ff4757;
+            color: white;
+            padding: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: 30px;
+            margin: 20px 0;
+            display: block;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .donate-btn:hover {
+            background-color: #e84118;
+            transform: translateY(-3px);
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Image Section with Animation */
+        .gallery {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .donate-btn {
+                max-width: 300px;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PawFeeders</h1>
+        <p>Helping to feed and care for stray dogs.</p>
+    </header>
+
+    <div class="container">
+        <!-- Donate Button -->
+        <a href="https://razorpay.me/@quicktips" class="donate-btn">Donate Now</a>
+
+        <!-- About Section -->
+        <div class="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to feeding roadside dogs and ensuring they get the love and care they need. Your donations go directly to providing meals for these dogs, improving their quality of life.</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="gallery">
+            <img src="States_Kerala_stray_dogs.jpg" alt="Feeding roadside dog">
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for your support. Together, we make a difference!</p>
+    </footer>
+
+</body>
+</html>
